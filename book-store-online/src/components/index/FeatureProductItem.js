@@ -17,7 +17,7 @@ class FeatureProductItem extends Component {
         return (
             <div className="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
                     <div className="featured__item">
-                        <div className="featured__item__pic set-bg"  style={featureProductItemStyle} data-setbg="img/featured/feature-1.jpg">
+                        <div className="featured__item__pic set-bg"  style={featureProductItemStyle} >
                             <ul className="featured__item__pic__hover">
                                 <li><a href="#"><i className="fa fa-heart"></i></a></li>
                                 <li><a href="#"><i className="fa fa-retweet"></i></a></li>
