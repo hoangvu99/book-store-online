@@ -15,9 +15,7 @@ import Blog from './pages/Blog';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Index></Index> */}
-    <BlogDetails></BlogDetails>
-    {/* <Blog></Blog> */}
+    <Index></Index>
   </React.StrictMode>,
   document.getElementById('root')
 );
