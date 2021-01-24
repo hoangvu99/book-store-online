@@ -2443,6 +2443,7 @@ ol {
 
 .blog__sidebar__recent__item__text {
 	overflow: hidden;
+	width: 200px;
 }
 
 .blog__sidebar__recent__item__text h6 {

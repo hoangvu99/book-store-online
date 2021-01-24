@@ -10,10 +10,14 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import BlogDetails from './pages/BlogDetails';
+import Blog from './pages/Blog';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Index></Index>
+    {/* <Index></Index> */}
+    <BlogDetails></BlogDetails>
+    {/* <Blog></Blog> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
