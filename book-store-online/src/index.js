@@ -4,18 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Index from './pages/Index';
+import ShopGrid from './pages/ShopGrid';
+import ViewProduct from './pages/ViewProduct';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-import BlogDetails from './pages/BlogDetails';
-import Blog from './pages/Blog';
+import Checkout from './pages/Checkout';
+import Cart from './pages/Cart';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Index></Index>
+    <Cart />
   </React.StrictMode>,
   document.getElementById('root')
 );
