@@ -3,12 +3,18 @@ import PropTypes from 'prop-types';
 import TabContent from './TabContent';
 
 
+
+
 class ProductItemDetails extends Component {
     render() {
 
-        const imagePath = require("../img/product/details/product-details-1.jpg");
         
         
+        
+       
+        const imagePath = require("../img/product/" + this.props.book.imagePath);
+        
+        console.log(this.props.book)
         
 
         return (
@@ -26,7 +32,7 @@ class ProductItemDetails extends Component {
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <div className="product__details__text">
-                                <h3>Vetgetable’s Package</h3>
+                                <h3>{this.props.book.name}</h3>
                                 <div className="product__details__rating">
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
@@ -35,7 +41,7 @@ class ProductItemDetails extends Component {
                                     <i className="fa fa-star-half-o"></i>
                                     <span>(18 reviews)</span>
                                 </div>
-                                <div className="product__details__price">$50.00</div>
+                                <div className="product__details__price">{this.props.book.price}đ</div>
                                 <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam
                                     vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
                                     quam vehicula elementum sed sit amet dui. Proin eget tortor risus.</p>
@@ -68,6 +74,7 @@ class ProductItemDetails extends Component {
                     </div>
                 </div>
             </section>
+            
         );
     }
 }

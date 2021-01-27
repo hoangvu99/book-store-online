@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BlogItem from './BlogItem';
-
+import {blogs} from '../data'
 class BlogSection extends Component {
     render() {
         return (
@@ -16,9 +16,9 @@ class BlogSection extends Component {
             </div>
             <div className="row">
                 
-                <BlogItem imagePath= {"../img/blog/blog-2.jpg"}/>
-                <BlogItem imagePath= {'../img/blog/blog-2.jpg'} />
-                <BlogItem imagePath= {'../img/blog/blog-3.jpg'}/>
+                <BlogItem imagePath= {"../img/blog/blog-2.jpg"} blog={blogs[0]} />
+                <BlogItem imagePath= {'../img/blog/blog-2.jpg'} blog={blogs[1]} />
+                <BlogItem imagePath= {'../img/blog/blog-3.jpg'}blog={blogs[2]}/>
             </div>
         </div>
     </section>

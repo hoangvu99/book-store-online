@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import banner from '../img/hero/banner.jpg';
-import Category from './Category';
+import banner from '../img/banner/banner.jpg';
+import Category from '../index/Category';
 class Hero extends Component {
     render() {
 
@@ -39,10 +39,7 @@ class Hero extends Component {
                         </div>
                         <div className="hero__item set-bg" style={bgstyle} data-setbg={banner}>
                             <div className="hero__text">
-                                <span>FRUIT FRESH</span>
-                                <h2>Vegetable <br />100% Organic</h2>
-                                <p>Free Pickup and Delivery Available</p>
-                                <a href="#" className="primary-btn">SHOP NOW</a>
+                                
                             </div>
                         </div>
                     </div>

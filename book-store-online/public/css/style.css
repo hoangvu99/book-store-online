@@ -855,6 +855,11 @@ ol {
 
 .featured__item {
 	margin-bottom: 50px;
+	cursor: pointer;
+}
+
+.featured__item:hover{
+	box-shadow: 0 6px 15px rgba(12, 12, 12, 0.08);
 }
 
 .featured__item:hover .featured__item__pic .featured__item__pic__hover {
@@ -943,7 +948,7 @@ ol {
 }
 
 .featured__item__text h5 {
-	color: #252525;
+	color: #F7941E;
 	font-weight: 700;
 }
 
@@ -1619,7 +1624,7 @@ ol {
 }
 
 .product__item__text h5 {
-	color: #252525;
+	color:#F7941E;
 	font-weight: 700;
 }
 
@@ -1834,6 +1839,7 @@ ol {
 .product__details__tab .nav-tabs li {
 	margin-bottom: 0;
 	margin-right: 65px;
+	cursor: pointer;
 }
 
 .product__details__tab .nav-tabs li:last-child {
@@ -2443,6 +2449,7 @@ ol {
 
 .blog__sidebar__recent__item__text {
 	overflow: hidden;
+	width: 200px;
 }
 
 .blog__sidebar__recent__item__text h6 {
@@ -3129,7 +3136,7 @@ ol {
 	.humberger__menu__wrapper .slicknav_nav .slicknav_row,
 	.humberger__menu__wrapper .slicknav_nav a {
 		padding: 8px 0;
-	
+	}
 	.humberger__menu__overlay {
 		position: fixed;
 		left: 0;

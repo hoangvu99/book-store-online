@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import HeaderTop from '../components/index/HeaderTop';
-import Container from '../components/index/Container';
-import Hero from '../components/index/Hero';
-import Slide from './../components/index/Slide';
+import HeaderTop from '../components/template/HeaderTop';
+import Container from '../components/template/Container';
+import Hero from '../components/template/Hero';
+import Footer from '../components/template/Footer';
 import FeatureProduct from '../components/index/FeatureProduct';
 import BlogSection from '../components/index/BlogSection';
-import Footer from '../components/index/Footer';
+
 
 
 class Index extends Component {

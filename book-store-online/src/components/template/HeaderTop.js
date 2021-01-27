@@ -13,7 +13,7 @@ class HeaderTop extends Component {
                     <div className="col-lg-6 col-md-6">
                         <div className="header__top__left">
                             <ul>
-                                <li><i className="fa fa-envelope"></i> hello@colorlib.com</li>
+                                <li><i class="fa fa-envelope"></i> abc@abc.com</li>
                                 <li>Free Shipping for all Order of $99</li>
                             </ul>
                         </div>
@@ -21,7 +21,7 @@ class HeaderTop extends Component {
                     <div className="col-lg-6 col-md-6">
                         <div className="header__top__right">
                             <div className="header__top__right__social">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-facebook"></i> </a>
                                 <a href="#"><i className="fa fa-twitter"></i></a>
                                 <a href="#"><i className="fa fa-linkedin"></i></a>
                                 <a href="#"><i className="fa fa-pinterest-p"></i></a>

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import HeaderTop from '../components/index/HeaderTop';
-import Footer from '../components/index/Footer';
-import Container from '../components/index/Container';
+
 import Breadcrumb from '../components/shop-grid/Breadcrumb';
 import ProductFilterable from '../components/shop-grid/ProductFilterable';
 import PropTypes from 'prop-types';
-import Hero from '../components/index/Hero';
+import HeaderTop from '../components/template/HeaderTop';
+import Container from '../components/template/Container';
+import Hero from '../components/template/Hero';
+import Footer from '../components/template/Footer';
 import Menu from '../components/shop-grid/Menu';
 
 

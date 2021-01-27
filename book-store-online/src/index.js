@@ -1,23 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './routes';
 import reportWebVitals from './reportWebVitals';
-import Index from './pages/Index';
-import ShopGrid from './pages/ShopGrid';
-import ViewProduct from './pages/ViewProduct';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-import Checkout from './pages/Checkout';
-import Cart from './pages/Cart';
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Cart />
+    <App></App>
   </React.StrictMode>,
   document.getElementById('root')
 );

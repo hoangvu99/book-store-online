@@ -7,7 +7,7 @@ class Breadcrumb extends Component {
 
         const imagePath = require("../img/breadcrumb.jpg");
         const addBackgroundImage = {
-            backgroundImage:"url("+window.location.href+imagePath.default+")"
+            backgroundImage:"url("+imagePath.default+")"
             
             
         }

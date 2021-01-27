@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CategoryItem from '../index/CategoryItem';
 import ProductItem from './ProductItem';
-
+import {books,categories} from '../data';
 class ProductFilterable extends Component {
     render() {
+        
         return (
             <section className="product spad">
         <div className="container">
@@ -14,17 +15,13 @@ class ProductFilterable extends Component {
                         <div className="sidebar__item">
                             <h4>Department</h4>
                             <ul>
-                            <CategoryItem categoryName={'Fresh Meat'} />
-                            <CategoryItem categoryName={'Vegetables'} />
-                            <CategoryItem categoryName={'Fruit & Nut Giftst'} />
-                            <CategoryItem categoryName={'Fresh Berries'} />
-                            <CategoryItem categoryName={'Ocean Foodst'} />
-                            <CategoryItem categoryName={'Butter & Eggs'} />
-                            <CategoryItem categoryName={'Fastfood'} />
-                            <CategoryItem categoryName={'Papayaya & Crisps'} />
-                            <CategoryItem categoryName={'Oatmeal'} />
-                            <CategoryItem categoryName={'Fresh Meat'} />
-                            <CategoryItem categoryName={'Fresh Bananas'} />
+                            {
+                                categories.map(item => {
+                            
+                            return <CategoryItem key={item.id}  categoryName={item.name} />
+                   
+                        })
+                    }
                             </ul>
                         </div>
                         <div className="sidebar__item">
@@ -45,67 +42,45 @@ class ProductFilterable extends Component {
                             </div>
                         </div>
                         <div className="sidebar__item sidebar__item__color--option">
-                            <h4>Colors</h4>
+                            <h4>Hình thức</h4>
                             <div className="sidebar__item__color sidebar__item__color--white">
                                 <label for="white">
-                                    White
+                                    Bìa mềm
                                     <input type="radio" id="white"/>
                                 </label>
                             </div>
                             <div className="sidebar__item__color sidebar__item__color--gray">
                                 <label for="gray">
-                                    Gray
+                                    Bìa Cứng
                                     <input type="radio" id="gray"/>
                                 </label>
                             </div>
-                            <div className="sidebar__item__color sidebar__item__color--red">
-                                <label for="red">
-                                    Red
-                                    <input type="radio" id="red"/>
-                                </label>
-                            </div>
-                            <div className="sidebar__item__color sidebar__item__color--black">
-                                <label for="black">
-                                    Black
-                                    <input type="radio" id="black"/>
-                                </label>
-                            </div>
-                            <div className="sidebar__item__color sidebar__item__color--blue">
-                                <label for="blue">
-                                    Blue
-                                    <input type="radio" id="blue"/>
-                                </label>
-                            </div>
-                            <div className="sidebar__item__color sidebar__item__color--green">
-                                <label for="green">
-                                    Green
-                                    <input type="radio" id="green"/>
-                                </label>
-                            </div>
+                            
+                            
                         </div>
                         <div className="sidebar__item">
-                            <h4>Popular Size</h4>
+                            <h4>Nhà Xuất Bản</h4>
                             <div className="sidebar__item__size">
                                 <label for="large">
-                                    Large
+                                    Minh Long
                                     <input type="radio" id="large"/>
                                 </label>
                             </div>
                             <div className="sidebar__item__size">
                                 <label for="medium">
-                                    Medium
+                                    NXB Trẻ
                                     <input type="radio" id="medium"/>
                                 </label>
                             </div>
                             <div className="sidebar__item__size">
                                 <label for="small">
-                                    Small
+                                    Dong A
                                     <input type="radio" id="small"/>
                                 </label>
                             </div>
                             <div className="sidebar__item__size">
                                 <label for="tiny">
-                                    Tiny
+                                    Alpha Books
                                     <input type="radio" id="tiny"/>
                                 </label>
                             </div>
@@ -135,15 +110,15 @@ class ProductFilterable extends Component {
                         </div>
                     </div>
                     <div className="row">
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
-                        <ProductItem productName={'Crab Pool Security'} productPrice={'$30.00'} ></ProductItem>
+                        <ProductItem book={books[2]} ></ProductItem>
+                        <ProductItem book={books[5]} ></ProductItem>
+                        <ProductItem book={books[8]} ></ProductItem>
+                        <ProductItem book={books[96]} ></ProductItem>
+                        <ProductItem book={books[34]} ></ProductItem>
+                        <ProductItem book={books[17]} ></ProductItem>
+                        <ProductItem book={books[25]} ></ProductItem>
+                        <ProductItem book={books[32]} ></ProductItem>
+                        <ProductItem book={books[11]} ></ProductItem>
                         
                     </div>
                     <div className="product__pagination">
